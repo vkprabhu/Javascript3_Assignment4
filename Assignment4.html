@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body onmousemove = "myFunction(event)">
+    <form>
+      <textarea id="area" rows="43" cols="80" ></textarea>
+    </form>
+    <script>
+      var area = document.getElementById('area');
+      function myFunction(e) {
+        x = e.clientX;
+        y = e.clientY;
+        area.innerHTML = "X: " + x + " Y: " + y + " Time: " + Date();
+      }
+    </script>
+  </body>
+</html>
